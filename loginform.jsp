@@ -8,9 +8,9 @@ if(session.getAttribute("user") == null){ %>
 <div class = "loginform"> 
 <h1>Login</h1>
 <form action="login.jsp" method="GET">
-<label for="username">Username:</label>
+<label for="username">Username:</label><br>
 <input type="text" id="username" name="username" required><br>
-<label for="password">Password:</label>
+<label for="password">Password:</label><br>
 <input type="password" id="password" name="password" required><br>
 <button type="submit" value="Submit" >Submit</button>
 </form>
@@ -26,12 +26,14 @@ if(session.getAttribute("user") == null){ %>
 <html>
 <head><title>Login form</title>
 <style>
-
+body{
+    background-color: white;
+}
 .loginform{
     background-color: lightgray;
     border-radius:2px;
     padding:16px;
-    margin: auto;
+    margin: 10px;
     float: center;
 }
 
