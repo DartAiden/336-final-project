@@ -18,7 +18,6 @@ try{
     ApplicationDB db = new ApplicationDB();
     Connection con = db.getConnection();
     Statement statement = con.createStatement();
-
     PreparedStatement ps = con.prepareStatement("SELECT * FROM user WHERE username = ? AND password = ?");
     ps.setString(1, username);
     ps.setString(2, password);

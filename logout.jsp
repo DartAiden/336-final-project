@@ -13,6 +13,7 @@
 <%
 session.invalidate();
 out.println("<h3>Successfully logged out...</h3>");
+
 %>
 
 </body>
